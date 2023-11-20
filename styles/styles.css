@@ -130,3 +130,18 @@ body {
     font-weight: 400;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color: #fafafa;
+    width: 100%;
+}
+
+.footer__title {
+    color: #737373;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .25px;
+}
