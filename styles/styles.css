@@ -145,3 +145,89 @@ body {
     font-weight: 700;
     letter-spacing: .25px;
 }
+
+.container-joinus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-shrink: 0;
+    color: white;
+}
+
+.container-joinus h6 {
+    color: #23A6F0;
+}
+
+.container-joinus__content {
+    text-align: center;
+}
+
+.container-joinus__content h3, h6, p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container-joinus__form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.container-joinus__form input[type=submit] {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 0;
+    margin-right: -10px;
+    border-left: none;
+}
+
+.container-joinus__email {
+    width: 668px;
+    padding: 17.9px 500px 17.9px 20px;
+    border-right: none;
+}
+
+.container-joinus__row {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    letter-spacing: .25px;
+}
+
+.container-joinus__row-child {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    width: 240px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.container-joinus__row-child h3 {
+    letter-spacing: .1px;
+}
+
+.container-joinus__icons {
+    display: flex;
+    gap: 20px;
+}
+
+.container-joinus__row-child a {
+    text-decoration: none;
+    color: white;
+    transition: all .4s ease;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: .2px;
+}
+
+.container-joinus__row-child a:hover {
+    font-size: 12.5px;
+    opacity: .5;
+}
+
