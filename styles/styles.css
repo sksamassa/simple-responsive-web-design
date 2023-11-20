@@ -153,8 +153,8 @@ body {
     align-items: center;
     gap: 80px;
     flex-shrink: 0;
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     margin-top: 10px;
     margin-bottom: 10px;
     color: white;
@@ -357,12 +357,6 @@ body {
     position: relative;
     width: 508px;
     height: 570px;
-    border: 1px solid white;
-
-    /* background-image: url("../images/rounded-profile.png");
-    background-repeat: no-repeat;
-    background-clip: cover;
-    background-size: 350px 350px; */
 }
 
 .main-img {
