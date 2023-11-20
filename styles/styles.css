@@ -326,18 +326,18 @@ body {
 .container__profession {
     width: auto;
     height: auto;
-    padding-left: 25px;
+    padding-left: 0px;
     padding-right: 25px;
 }
 
 .container__profession h5 {
     color: #252B42;
-    text-align: center;
+    text-align: left;
 }
 
 .container__profession h6 {
     color: #737373;
-    text-align: center;
+    text-align: left;
 }
 
 .container__rating {
@@ -351,4 +351,90 @@ body {
     display: block;
     width: 22.014px;
     height: 22.014px;
+}
+
+.container__rounded-rect {
+    position: relative;
+    width: 508px;
+    height: 570px;
+    border: 1px solid white;
+
+    /* background-image: url("../images/rounded-profile.png");
+    background-repeat: no-repeat;
+    background-clip: cover;
+    background-size: 350px 350px; */
+}
+
+.main-img {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    z-index: 2;
+}
+
+.img-1 {
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    z-index: 3;
+}
+
+.img-2 {
+    position: absolute;
+    left: 35%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.shadow-box {
+    width: 350px;
+    height: 350px;
+    border-radius: 0px 83.115px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 0;
+    background: #00087E;
+}
+
+.container__row-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    gap: 35px;
+}
+
+.container__row-column h2, p {
+    color: #fff;
+}
+
+.learn-more {
+    display: flex;
+    flex-direction: row;
+}
+
+.container__row-column .right-arr {
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+}
+
+.container__row-column a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.container__row-column .container__rect {
+    /* position: relative;
+    right: 90px; */
+    height: 5px;
 }
