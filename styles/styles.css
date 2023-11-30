@@ -178,6 +178,13 @@ body {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: baseline;
+    transition: all .4s;
+}
+
+.container__form input[type=email]:hover, container__form input[type=email]:focus {
+    outline: none;
+    background-color: #f1f1f1;
+    color: #333;
 }
 
 .container__form input[type=submit] {
@@ -645,3 +652,30 @@ p.product-desc {
  .bg-image {
     background-image: url("../images/product-cover2.png");
  }
+
+
+ /* Changed the styles of one of the 'learn-more button */
+ .change-styles {
+    color: #23A6F0; 
+    background-color: transparent;
+ }
+
+ .change-styles::after {
+    color: #23A6F0; 
+ }
+
+ .change-styles:hover {
+    background-color: transparent;
+    border: 3px solid #23A6F0;
+    width: 230px;
+ }
+
+ .change-styles:hover a {
+    font-weight: bold;
+ }
+
+ button, a {
+    cursor: pointer;
+ }
+
+ 
