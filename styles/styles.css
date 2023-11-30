@@ -1,6 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -9,7 +7,8 @@ html {
 }
 
 body {
-    margin: auo;
+    margin: auto;
+    padding: 0;
     background-color: #252B42;
 }
 
@@ -432,3 +431,217 @@ body {
     right: 90px; */
     height: 5px;
 }
+
+/* Styles for product cards */
+.container__product-cards {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+.container__product-card{
+    width: 335px;
+    height: auto;
+}
+.container__product-description {
+    background-color: #fff;
+    padding: 25px;
+}
+
+.container__card-image {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 335px;
+    height: 300px;
+    padding: 8px;
+    background-image: url("../images/product-cover.png");
+    background-size: cover;
+    background-position: center;
+}
+
+p.sale {
+    align-self: flex-start;
+    padding: 3px 8px;
+    font-size: 14px;
+    margin-left: 1em;
+    color: #fff;
+    background-color: #E74040;
+    letter-spacing: .2px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.container__interactions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.container__interactions img {
+    width: 40px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.container__star-rating {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.container__rating-title {
+    color: #23A6F0;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .25px;
+    text-decoration: none;
+}
+
+.container__rating {
+    background-color: #252B42;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.container__rating::before {
+    content: '\f005';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 5px;
+    color: yellow;
+}
+
+h5.product-title {
+    color: #252B42;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: .1px;
+}
+
+p.product-desc {
+    color: #737373;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+}
+
+.container__sales {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; 
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.container__sale-number::before {
+    content: '\f019';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 8px;
+    color: #737373;
+}
+
+.container__prices {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px;
+}
+
+.product-discount {
+    color: #BDBDBD;
+}
+
+.product-price {
+    color: #40BB15;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row .lesson-number::before {
+    content: '\f080';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 8px;
+    color: #737373;
+}
+
+.row p.duration::before {
+    content: '\f2f2';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 8px;
+    color: #737373;
+}
+
+.row p.progression::before {
+    content: '\f201';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 8px;
+    color: #737373;
+}
+
+ .duration, .progression, .lesson-number {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 16px; 
+    letter-spacing: 0.2px;
+    color: #737373;
+ }
+
+ .learn-more::after {
+    content: '\f054';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 30px;
+    color: #737373;
+    transition: all 1s ease;
+    
+ }
+
+ .learn-more {
+    text-align: left;
+    text-decoration: none;
+    padding: 10px;
+    color: #737373;
+    border-radius: 25px;
+    background-color: #fff;
+    transition: background-color .4s ease-in-out;
+ }
+
+ .learn-more:hover {
+    color: #fff;
+    background-color: #737373;
+ }
+
+ .learn-more:hover::after {
+    margin-left: 100px;
+    color: #fff;
+ }
+
+ .learnin-link {
+    display: inline-block;
+    border: 2px solid #737373;
+    border-radius: 25px;
+ }
+
+ /* Changed the background image of the second product card */
+ .bg-image {
+    background-image: url("../images/product-cover2.png");
+ }
